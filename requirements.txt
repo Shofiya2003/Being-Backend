@@ -2,3 +2,4 @@ flask
 pathlib
 python-dotenv
 PyJWT
+pymongo
