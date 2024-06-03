@@ -13,7 +13,7 @@ config = Config().dev_config
 app.env = config.ENV
 
 # connecting to mongodb
-mongo_client = MongoClient(os.environ.get("MONGO_URI"))
+mongo_client = MongoClient(os.getenv("MONGO_URI"))
 db = mongo_client["being"]
 
 # import api blueprint to register it with app
